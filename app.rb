@@ -34,6 +34,7 @@ class MyApp < Sinatra::Base
     headers['Access-Control-Allow-Methods'] = 'POST, GET, OPTIONS'
     headers['Content-type'] = 'text/html; charset=UTF-8'
     headers['server'] = 'Ruby, Ubuntu'
+    headers 'Access-Control-Allow-Origin' => '*'
   end
 
   get '/' do
